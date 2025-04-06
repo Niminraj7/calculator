@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <h1 id="heading">Standard</h1>
+            <div class="displays"><input type="text" id="display" disabled></div> <!--disable kia taaki vaha alag se kuch na likh sake.-->
+            <div class="buttons">
+               <button onclick="appendvalue('%')"><div class="items"> %</div></button>
+               <button onclick="clearDisplay()"><div class="items"> CE</div></button>
+               <button onclick="clearDisplay()"><div class="items"> C</div></button>
+               <button onclick="clearDisplay()"><div class="items"> back</div></button>
+               <button onclick="upon()"><div class="items"> 1/x</div></button>
+               <button onclick="square()"><div class="items"> x^2</div></button>
+               <button onclick="root()"><div class="items"> root(x)</div></button>
+               <button onclick="appendvalue('/')"><div class="items"> /</div></button>
+               <button onclick="appendvalue('7')"><div class="items"> 7</div></button>
+               <button onclick="appendvalue('8')"><div class="items"> 8</div></button>
+               <button onclick="appendvalue('9')"><div class="items"> 9</div></button>
+               <button onclick="appendvalue('*')"><div class="items"> *</div></button>
+               <button onclick="appendvalue('4')"><div class="items"> 4</div></button>
+               <button onclick="appendvalue('5')"><div class="items"> 5</div></button>
+               <button onclick="appendvalue('6')"><div class="items"> 6</div></button>
+               <button onclick="appendvalue('-')"><div class="items"> -</div></button>
+               <button onclick="appendvalue('1')"><div class="items"> 1</div></button>
+               <button onclick="appendvalue('2')"><div class="items"> 2</div></button>
+               <button onclick="appendvalue('3')"><div class="items"> 3</div></button>
+               <button onclick="appendvalue('+')"><div class="items"> +</div></button>
+               <button onclick="appendfront()"><div class="items"> +/-</div></button>
+               <button onclick="appendvalue('0')"><div class="items"> 0</div></button>
+               <button onclick="appendvalue('.')"><div class="items"> .</div></button>
+               <button onclick="calculateResult()"><div class="items"> =</div></button> 
+                        
+            </div>
+        </div>
+    </div>
+
+    <button class="mode"> <h1 id="innerh1" style="color:rgb(34, 33, 33)">Light Mode</h1> </button>
+
+    <script src="script.js"> </script>
+</body>
+</html>
+
+
+
+
