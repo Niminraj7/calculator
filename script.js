@@ -91,4 +91,24 @@ mode.addEventListener("click",()=>{
     }
 });
 
+// extraaa by gpt:
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+
+    // If the key is a number or operator, simulate button press
+    if (!isNaN(key) || "+-*/.".includes(key)) {
+        appendvalue(key);
+    } else if (key === "Enter" || key === "=") {
+        calculateResult();
+    } else if (key === "Backspace") {
+        deleteLast();
+    } else if (key.toLowerCase() === "c") {
+        clearDisplay();
+    }
+});
+
+var deleteLast = function(){
+    dis.value = (dis.value).slice(0,-1);
+}
+
 
