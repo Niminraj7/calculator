@@ -91,7 +91,6 @@ mode.addEventListener("click",()=>{
     }
 });
 
-// extraaa by gpt:
 document.addEventListener('keydown', function(event) {
     const key = event.key;
 
