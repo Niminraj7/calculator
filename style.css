@@ -30,7 +30,7 @@ body{
     color: rgb(152, 152, 1);
 }
 .displays{
-    height: 120px;
+    height: 140px;
     /* background-color: gray; */
 }
 #display{
@@ -41,7 +41,7 @@ body{
 .buttons{
     position: absolute;
     bottom:0;
-    height: 50vh;
+    height: 47vh;
     width: 30vw;
     background-color:black; /*delete it at the end.*/
     display:grid;
